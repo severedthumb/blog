@@ -1,5 +1,92 @@
-body {
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #000;
+}
+
+:root {
+    font-family: "Trebuchet MS", serif;
+    --main-bg-color: #161616;
+    --main-fg-color: #e3e3e3;
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+header, main {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 25px 0;
+}
+
+main {
+    display: flex;
+    gap: 25px;
+}
+
+/*  WIDGET CONTAINER AND ITS CONTENTS  */
+
+.widgetContainer {
+    width: 25%;
+}
+
+.widget {
+    min-height: 50px;
+    margin-bottom: 25px;
+    border: 1px solid var(--main-fg-color);
+    text-align: center;
+    padding: 25px;
+}
+
+.profilePic {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+/*  ENTRY CONTAINER AND ITS CONTENTS  */
+
+.entryContainer {
+    width: 75%;
+}
+
+.entry {
+    margin-bottom: 25px;
+}
+
+/*  FONT STUFF  */
+
+h1, h2, h3, p {
+    color: var(--main-fg-color);
+    letter-spacing: 0.9px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 4px 0 4px 15px;
+}
+
+h3 {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 0;
+}
+
+p {
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+.entry p {
+    padding: 4px 0 4px 15px;
 }
