@@ -115,3 +115,23 @@ p {
         flex-grow: 1;
     }
 }
+
+@media (max-width: 500px) {
+    h1 {
+        text-align: center;
+    }
+    .widgetContainer {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .pic-widget {
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    h1 {
+        font-size: 24px;
+    }
+}
